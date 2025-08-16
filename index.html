@@ -1,11 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>PT. Digital Solutions Indonesia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="./asset/logo.jpg" alt="">
+                    <span>PT. DSI</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a class="nav-link active" data-target="home">Home</a></li>
+                    <li><a class="nav-link" data-target="profile">Profile</a></li>
+                    <li><a class="nav-link" data-target="services">Services</a></li>
+                    <li><a class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="welcome-box">
+                    <i class="fas fa-hand-wave"></i>
+                    Hi <span id="userName">Guest</span>! Selamat Datang
+                </div>
+                <h1>PT. Digital Solutions Indonesia</h1>
+                <p>Solusi Teknologi Terdepan untuk Bisnis Modern</p>
+                <a class="btn" data-target="contact">
+                    <i class="fas fa-rocket"></i> Mulai Konsultasi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section profile">
+        <div class="container">
+            <!-- Banner -->
+            <div class="profile-banner">
+                <h2><i class="fas fa-building"></i> Profil Perusahaan</h2>
+                <p>PT. Digital Solutions Indonesia - Membangun Masa Depan Digital</p>
+            </div>
+
+            <!-- Profile Content -->
+            <div class="profile-grid">
+                <div class="info-card">
+                    <h3>
+                        <i class="fas fa-info-circle"></i> Tentang Perusahaan
+                    </h3>
+                    <p>PT. Digital Solutions Indonesia adalah perusahaan teknologi terdepan yang berdiri sejak tahun 2015. Kami berkomitmen untuk memberikan solusi teknologi inovatif yang membantu bisnis berkembang di era digital.</p>
+                    <br>
+                    <p>Dengan tim yang terdiri dari para ahli berpengalaman di bidang teknologi informasi, kami telah melayani lebih dari 500+ klien dari berbagai industri.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <strong>Tahun Berdiri</strong><br>2015
+                        </div>
+                        <div class="stat-item">
+                            <strong>Tim Profesional</strong><br>50+ Expert
+                        </div>
+                        <div class="stat-item">
+                            <strong>Klien Terlayani</strong><br>500+ Perusahaan
+                        </div>
+                        <div class="stat-item">
+                            <strong>Lokasi</strong><br>Jakarta, Indonesia
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <i class="fas fa-eye"></i> Visi & Misi
+                    </h3>
+                    
+                    <h4><i class="fas fa-bullseye"></i> Visi</h4>
+                    <p>Menjadi perusahaan teknologi terdepan di Asia Tenggara yang menghadirkan solusi digital inovatif untuk mentransformasi cara berbisnis di era modern.</p>
+                    
+                    <h4 style="margin-top: 1.5rem;"><i class="fas fa-rocket"></i> Misi</h4>
+                    <ul class="mission-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Mengembangkan solusi teknologi yang user-friendly dan efisien</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Memberikan layanan berkualitas tinggi dengan dukungan 24/7</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Membantu klien mencapai transformasi digital yang terstruktur</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Berinovasi mengikuti perkembangan teknologi terkini</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i> Layanan Kami
+            </h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Pengembangan Web</h3>
+                    <p>Membangun website modern dan responsif dengan teknologi terkini untuk meningkatkan kehadiran online bisnis Anda.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Aplikasi Mobile</h3>
+                    <p>Mengembangkan aplikasi mobile yang user-friendly untuk iOS dan Android sesuai kebutuhan bisnis Anda.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Solusi Cloud</h3>
+                    <p>Menyediakan infrastruktur cloud yang scalable dan secure untuk mendukung pertumbuhan bisnis digital.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Melindungi aset digital perusahaan dengan sistem keamanan berlapis dan monitoring 24/7.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategi pemasaran digital terintegrasi untuk meningkatkan brand awareness dan konversi penjualan.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Konsultasi teknologi informasi untuk optimalisasi proses bisnis dan transformasi digital perusahaan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i> Hubungi Kami
+            </h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i> Nama Lengkap
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda">
+                        <div class="error-message" id="nameError">Nama harus diisi minimal 2 karakter</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com">
+                        <div class="error-message" id="emailError">Email tidak valid</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> Nomor Telepon
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx">
+                        <div class="error-message" id="phoneError">Nomor telepon tidak valid</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment"></i> Pesan
+                        </label>
+                        <textarea id="message" name="message" rows="5" placeholder="Sampaikan kebutuhan atau pertanyaan Anda..."></textarea>
+                        <div class="error-message" id="messageError">Pesan harus diisi minimal 10 karakter</div>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+
+                <!-- Result Display -->
+                <div class="result-display" id="resultDisplay">
+                    <h3><i class="fas fa-check-circle"></i> Pesan Berhasil Dikirim!</h3>
+                    <div id="formResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
